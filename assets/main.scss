@@ -217,7 +217,7 @@ section.three {
       position: relative;
       right: 190px;
       height: 170px;
-      width: auto;
+      width: 350px;
       margin-top: 30px;
       padding: 20px 20px 0 20px;
       background-color: #cc4145;
@@ -269,8 +269,104 @@ section.three {
 
 section.four {
   background-color: #f5e7e7;
-  height: 300px;
-  width: 100%;
+  //   width: 100%;
+  padding: 20px 150px;
+  h3 {
+    font-size: 50px;
+    font-weight: 600;
+    padding: 7px;
+    text-transform: capitalize;
+  }
+  p {
+    font-weight: 400;
+    position: relative;
+    font-size: 27px;
+    width: 40%;
+    // padding: 14px 0;
+    padding-bottom: 30px;
+  }
+  .LeftVerticalLine {
+    content: "";
+    display: block;
+    left: -30px;
+    top: -27px;
+    position: absolute;
+    width: 6px;
+    height: 145px;
+    background-color: #d43a47ab;
+  }
+  a {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 30px;
+    color: #e02a39;
+    border: 1px solid #d43a47ab;
+    border-radius: 7px;
+  }
+  .GridColumn {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-column-gap: 20px;
+    margin: auto;
+    div {
+      background-color: #fff;
+      border-radius: 7px;
+      margin: 100px 0 50px 0;
+      padding-bottom: 30px;
+      h1 {
+        all: unset;
+        display: block;
+        font-size: 24px;
+        font-weight: 600;
+        color: rgb(31, 31, 31);
+
+        padding: 0 30px;
+        padding-top: 10px;
+      }
+      h2 {
+        all: unset;
+        display: block;
+        font-size: 17px;
+        font-weight: 400;
+        color: rgb(97, 97, 97);
+        padding: 3px 30px;
+      }
+      h3 {
+        all: unset;
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        color: rgb(48, 48, 48);
+        padding: 0px 30px;
+      }
+      p {
+        all: unset;
+        display: block;
+        font-size: 19px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.651);
+        padding: 10px 30px;
+      }
+      a {
+        all: unset;
+        cursor: pointer;
+        margin: 30px;
+        color: #e02a39c5;
+        font-size: 14px;
+        font-weight: 600;
+        // padding: 30px;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: 200px;
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px;
+    }
+  }
 }
 
 section.five {
