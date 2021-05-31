@@ -18,7 +18,13 @@ ul {
 a {
   text-decoration: none;
 }
-
+a:hover {
+  opacity: 0.8;
+}
+.logo {
+  width: 160px;
+  height: 100px;
+}
 header {
   position: fixed;
   top: 0;
@@ -29,7 +35,7 @@ header {
   align-items: center;
   padding: 24px 90px;
   background-color: #fff;
-  box-shadow: -40vw 7px 13px 10px #eeeeee;
+  z-index: 999;
   ul {
     font-size: 20px;
     li {
@@ -119,7 +125,7 @@ section.first {
   }
   aside img {
     width: 100%;
-    height: 36vh;
+    height: 62vh;
   }
 }
 
@@ -181,7 +187,7 @@ section.three {
       position: relative;
       height: 2px;
       width: 180px;
-      background-color: #000;
+      background-color: rgba(0, 0, 0, 0.644);
       left: -196px;
       top: 34px;
     }
@@ -270,7 +276,7 @@ section.four {
 section.five {
   display: grid;
   grid-template-columns: 70% 30%;
-  margin: 80px 0;
+  margin: 80px 150px 0 0;
   div {
     display: flex;
     flex-direction: column;
@@ -280,7 +286,7 @@ section.five {
     article {
       position: relative;
       top: -10px;
-      left: 246px;
+      left: 195px;
       height: 440px;
       width: 800px;
       background-color: line;
@@ -322,8 +328,125 @@ section.five {
       }
     }
   }
+  .questionRight {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 588px;
+    bottom: 94px;
+  }
   aside img {
     width: 100%;
-    height: 36vh;
+    height: 62vh;
   }
+}
+.ImageLeftArrow {
+  all: unset;
+  display: flex;
+  position: relative;
+  right: 58px;
+  bottom: 273px;
+  z-index: 50;
+  a {
+    background-color: rgb(65, 65, 65);
+    color: rgba(255, 255, 255, 0.753);
+    padding: 20px;
+    font-size: 30px;
+    &:last-child {
+      border-left: 1px solid #000;
+    }
+  }
+}
+
+section.six {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5e7e7;
+  padding: 100px 0;
+  //   margin: auto 150px;
+  text-align: center;
+  h6 {
+    font-family: sans-serif;
+    color: #cc4145;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  h5 {
+    padding: 30px 0;
+    font-family: inherit;
+    color: #362a2a;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    width: 40%;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #555555;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+  }
+  input {
+    padding: 24px;
+    border-radius: 36px;
+    border: 1px solid #d6d6d6;
+    color: #7a7a7a;
+    width: 27vw;
+    font-size: 20px;
+  }
+  .TelegramPlaneForEmailSub {
+    position: absolute;
+    padding: 10px;
+    background-color: #cc4146;
+    border-radius: 100px;
+    right: 11px;
+    top: 12px;
+    i {
+      color: #fff;
+      font-size: 30px;
+    }
+  }
+
+  input:focus {
+    border-radius: 36px !important;
+    border: 2px solid #5a5a5a91 !important;
+    outline: none;
+    box-shadow: none;
+  }
+  input::placeholder {
+    padding-left: 10px;
+    font-size: 20px;
+    color: #d6d6d6;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    display: flex;
+    padding: 50px 10px;
+    li {
+      padding: 0 20px;
+      a {
+        font-size: 18px;
+        color: #676565;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.haveShadow {
+  box-shadow: -40vw 7px 13px 10px #eeeeee;
+}
+.haveborder {
+  border-bottom: 2px solid #5f5f5f;
 }
